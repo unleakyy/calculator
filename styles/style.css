@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-inline: 20px;
+}
+
+.master {
+  height: 450px;
+  min-width: 320px;
+  max-width: 425px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(66, 66, 66);
+  padding: 3px;
+  margin-inline: auto;
+  margin-top: 10px;
+}
+
+.screen {
+  background-color: rgb(66, 66, 66);
+  height: 30%;
+  border-radius: inherit;
+  padding-inline: 15px;
+  color: white;
+  text-align: right;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+  justify-content: space-evenly;
+}
+
+p {
+  font-family: monospace;
+}
+
+p:nth-child(2) {
+  font-size: 2rem;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 70%;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-width: 1px;
+}
+button:hover {
+  background-color: rgb(255, 255, 255, 0.95);
+}
+button:active {
+  background-color: rgb(255, 255, 255);
+}
+
+.button-container > .number:nth-child(17) {
+  grid-column: 1 / 3;
+}
+
+.operator {
+  background-color: rgb(255, 89, 0);
+}
+.operator:hover {
+  background-color: rgb(255, 89, 0, 0.95);
+}
+
+.operator:active {
+  background-color: rgb(255, 89, 0);
+}
+
+#control {
+  grid-column: 1/4;
+}
+
+.number:nth-last-child(3) {
+  grid-column: 1/3;
+}
